@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low-Carb Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .day {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .day:hover {
+            background-color: #e0e0e0;
+        }
+        .recipes {
+            display: none;
+            margin-top: 10px;
+        }
+        .recipe {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>10-Day Low-Carb Recipes</h1>
+
+    <div class="day" onclick="toggleRecipes('day1')">
+        <h2>Day 1</h2>
+        <div id="day1" class="recipes">
+            <div class="recipe"><strong>Breakfast:</strong> Scrambled Eggs with Avocado and Spinach</div>
+            <div class="recipe"><strong>Lunch:</strong> Grilled Chicken Salad</div>
+            <div class="recipe"><strong>Dinner:</strong> Baked Salmon with Asparagus</div>
+        </div>
+    </div>
+
+    <div class="day" onclick="toggleRecipes('day2')">
+        <h2>Day 2</h2>
+        <div id="day2" class="recipes">
+            <div class="recipe"><strong>Breakfast:</strong> Greek Yogurt with Chia Seeds and Berries</div>
+            <div class="recipe"><strong>Lunch:</strong> Turkey Lettuce Wraps</div>
+            <div class="recipe"><strong>Dinner:</strong> Cauliflower Stir-Fry with Shrimp</div>
+        </div>
+    </div>
+
+    <div class="day" onclick="toggleRecipes('day3')">
+        <h2>Day 3</h2>
+        <div id="day3" class="recipes">
+            <div class="recipe"><strong>Breakfast:</strong> Veggie Omelette</div>
+            <div class="recipe"><strong>Lunch:</strong> Tuna Salad Lettuce Wraps</div>
+            <div class="recipe"><strong>Dinner:</strong> Grilled Steak with Roasted Brussels Sprouts</div>
+        </div>
+    </div>
+
+    <div class="day" onclick="toggleRecipes('day4')">
+        <h2>Day 4</h2>
+        <div id="day4" class="recipes">
+            <div class="recipe"><strong>Breakfast:</strong> Chia Pudding with Almonds</div>
+            <div class="recipe"><strong>Lunch:</strong> Cobb Salad</div>
+            <div class="recipe"><strong>Dinner:</strong> Zucchini Noodles with Pesto and Chicken</div>
+        </div>
+    </div>
+
+    <div class="day" onclick="toggleRecipes('day5')">
+        <h2>Day 5</h2>
+        <div id="day5" class="recipes">
+            <div class="recipe"><strong>Breakfast:</strong> Smoked Salmon and Eggs</div>
+            <div class="recipe"><strong>Lunch:</strong> Grilled Chicken and Veggies</div>
+            <div class="recipe"><strong>Dinner:</strong> Lamb Chops with Cauliflower Mash</div>
+        </div>
+    </div>
+
+    <div class="day" onclick="toggleRecipes('day6')">
+        <h2>Day 6</h2>
+        <div id="day6" class="recipes">
+            <div class="recipe"><strong>Breakfast:</strong> Coconut Flour Pancakes</div>
+            <div class="recipe"><strong>Lunch:</strong> Shrimp and Avocado Salad</div>
+            <div class="recipe"><strong>Dinner:</strong> Baked Chicken Thighs with Green Beans</div>
+        </div>
+    </div>
+
+    <div class="day" onclick="toggleRecipes('day7')">
+        <h2>Day 7</h2>
+        <div id="day7" class="recipes">
+            <div class="recipe"><strong>Breakfast:</strong> Egg Muffins</div>
+            <div class="recipe"><strong>Lunch:</strong> Salmon and Cucumber Salad</div>
+            <div class="recipe"><strong>Dinner:</strong> Grilled Pork Chops with Roasted Cauliflower</div>
+        </div>
+    </div>
+
+    <div class="day" onclick="toggleRecipes('day8')">
+        <h2>Day 8</h2>
+        <div id="day8" class="recipes">
+            <div class="recipe"><strong>Breakfast:</strong> Cottage Cheese with Berries</div>
+            <div class="recipe"><strong>Lunch:</strong> Chicken Avocado Salad</div>
+            <div class="recipe"><strong>Dinner:</strong> Beef Stir-Fry with Zucchini</div>
+        </div>
+    </div>
+
+    <div class="day" onclick="toggleRecipes('day9')">
+        <h2>Day 9</h2>
+        <div id="day9" class="recipes">
+            <div class="recipe"><strong>Breakfast:</strong> Avocado and Bacon Scramble</div>
+            <div class="recipe"><strong>Lunch:</strong> Turkey Spinach Roll-ups</div>
+            <div class="recipe"><strong>Dinner:</strong> Grilled Cod with Sautéed Spinach</div>
+        </div>
+    </div>
+
+    <div class="day" onclick="toggleRecipes('day10')">
+        <h2>Day 10</h2>
+        <div id="day10" class="recipes">
+            <div class="recipe"><strong>Breakfast:</strong> Boiled Eggs and Avocado</div>
+            <div class="recipe"><strong>Lunch:</strong> Zucchini Noodles with Pesto and Chicken</div>
+            <div class="recipe"><strong>Dinner:</strong> Stir-fried Tofu with Broccoli</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleRecipes(dayId) {
+            const recipesDiv = document.getElementById(dayId);
+            if (recipesDiv.style.display === "none" || recipesDiv.style.display === "") {
+                recipesDiv.style.display = "block";
+            } else {
+                recipesDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
